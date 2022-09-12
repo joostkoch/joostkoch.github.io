@@ -11,9 +11,9 @@
         <body>
             <div>
                 <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'Wie-Ben-Ik')">Wie Ben Ik</button>
-                    <button class="tablinks" onclick="openTab(event, 'Wat-Kan-Ik')">Wat Kan Ik</button>
-                    <button class="tablinks" onclick="openTab(event, 'Wat-Wil-Ik')">Wat Wil Ik</button>
+                    <button class="tablinks tab-button" onclick="openTab(event, 'Wie-Ben-Ik')">Wie Ben Ik</button>
+                    <button class="tablinks tab-button" onclick="openTab(event, 'Wat-Kan-Ik')">Wat Kan Ik</button>
+                    <button class="tablinks tab-button" onclick="openTab(event, 'Wat-Wil-Ik')">Wat Wil Ik</button>
                 </div>
                 <div>
                     <!-- Tab content -->
@@ -259,29 +259,45 @@ mark {
     background: none;
 }
 .tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
   background-color: #f1f1f1;
+  display: flex;
 }
+
 /* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
+.tab-button {
+    margin: 10px;
+    padding: 10px;
+      background: #e8ecf2;
+    color: #73787d;
+    border: none;
+    
+    border-radius: 10px;
+    transition: 0.3s;
+
+    box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.8),
+        2px 2px 10px rgba(0,0,0, 0.9);
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+    background-color: #ddd;
+    
+    border-radius: 10px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  -2px -2px 5px rgba(255, 255, 255, 0.8),
+                 2px 2px 5px rgba(0,0,0, 0.9),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.8),
+                inset 2px 2px 5px rgba(0,0,0, 0.9);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+    background-color: #ccc;
+    
+      border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: inset 2px 2px 10px #b3b3b3,
+                inset -2px -2px 10px #ffffff;
 }
 
 /* Style the tab content */
@@ -338,4 +354,7 @@ mark {
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
+
 </style>
+
+
