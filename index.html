@@ -4,227 +4,232 @@
         <title>Joost</title>
         <link href="daan_site.ico"  rel="icon" type="image/x-icon" />
     </head>
-    <div >
-        <body class="container neu-border" style="margin-left: 10vw;margin-right: 10vw; margin-top: 5vh;">
-            <Header class="header">
-                <h1 style="padding: 10px; margin: 0px; font-size: 80px;" class="text-shadow">Joost</h1>
-            </Header>
-            <div>
-                <div class="tab" >
-                    <button class="tablinks neu-border" style="margin-left: 25px;" onclick="openTab(event, 'Wie-Ben-Ik')">Wie Ben Ik</button>
-                    <button class="tablinks neu-border" onclick="openTab(event, 'Wat-Kan-Ik')">Wat Kan Ik</button>
-                    <button class="tablinks neu-border" onclick="openTab(event, 'Wat-Wil-Ik')">Wat Wil Ik</button>
-                </div>
-                <div>
-                    <!-- Tab content -->
-                    <div id="Wie-Ben-Ik" class="tabcontent" style="display: block;">
-                        <div class="neu-border">
-                            <div class="neu-border">
-                                <h3>Wie Ben Ik?</h3>
-                                <hr noshade></hr>
-                                <p style="line-height: 1.2;">
-                                    Ik ben Joost<br>
-                                    ik ben 15 jaar en word komende november 16<br>
-                                    Ik kom uit <a href="https://www.google.nl/maps/place/Amsterdam" target=”_blank”>Amsterdam</a> en daar woon ik ook <br>
-                                    Ik zat op de Dongeschool in de Rivierenbuurt<br>
-                                    Mijn tandenborstel is <mark style="color: white;">wit</mark> met <mark style="color: green;">groen</mark><br>
-                                    Mijn lievelingskleur is <mark style="color: red;">rood</mark>
-                                </p>
-                            </div>
+        <body style="position: relative;" >
+			<div style="  width: 100%;height: 100%;position: absolute;top: 0;left: 0; z-index: -1000;">
+				<canvas id="canvas">Canvas is not supported in your browser.</canvas>
+				<canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+			</div>
+			
 
-                            <div  class="neu-border">
-                                <button type="button" class="collapsible">Familie</button>
-                                <div class="content">
-                                    <!-- <h3>Familie</h3> -->
-                                    <hr noshade></hr>
-                                    <p  style="line-height: 1.2;">
-                                        Ik woon samen met mijn vader moeder zusje en twee katten <mark style="color: orangered">Daan</mark> en <mark style="color: gray;">Pip</mark>
-                                    </p>
-                                    <img src="wie_ben_ik/Familie/daan.jpg" alt="Daan" style="display: inline-block; width: 40%;" >
-                                    <img src="wie_ben_ik/Familie/pip.jpg" alt="Pip" style="display: inline-block; width: 40%;">
-                                </div>
-                            </div>
-                            <div  class="neu-border">
-                                <button type="button" class="collapsible">Vrije Tijd</button>
-                                <div class="content">
-                                    <h3>Vrije Tijd</h3>
-                                    <hr noshade></hr>
-                                    <p style="line-height: 1.2;">
-                                        Afgelopen vakantie ben ik naar Friesland gevaren op de zeilboot van mij en mijn familie.<br>
-                                        En ik heb een week gezeild in vinkeveen in een wat kleiner bootje.<br>
-                                        Ik heb natuurlijk ook veel series gekeken en gezwommen<br>
-                                        <br>
-                                        Na school of in het weekend stel ik huiswerk eigenlijk zo ver mogelijk uit :)<br>
-                                        En dan ga ik series kijken, code of minecraft. <br>
-                                        Een van de laatste series die ik uit heb gekeken was Breaking Bad<br>
-                                        <br>
-                                        Ik speel natuurlijk ook spellen, zoals Minecraft en Valorant
-                                    </p>
-                                    <img src="wie_ben_ik/Vrije_Tijd/boot.jpg" alt="Onze Boot" style="display: inline-block; width: 40%; height: 200px;" >
-                                    <img src="wie_ben_ik/Vrije_Tijd/braking_bad.jpg" alt="Breaking Bad" style="display: inline-block; width: 400px;" >
-        
-                                </div>
-                            </div>
+			<div class="container neu-border" style="margin-left: 10vw;margin-right: 10vw; width: 80vw; transform: translateY(10vh); z-index: 9; background-color: #28282B;">
+				<Header class="header">
+					<h1 style="padding: 10px; margin: 0px; font-size: 80px;" class="text-shadow">Joost</h1>
+				</Header>
+				<div>
+					<div class="tab" >
+						<button class="tablinks neu-border " style="margin-left: 25px; color: black;" onclick="openTab(event, 'Wie-Ben-Ik')" class="active"><span class="bloom-text">Wie Ben Ik</span></button>
+						<button class="tablinks neu-border " style="color: black;" onclick="openTab(event, 'Wat-Kan-Ik')"><span class="bloom-text">Wat Kan Ik</span></button>
+						<button class="tablinks neu-border " style="color: black;" onclick="openTab(event, 'Wat-Wil-Ik')"><span class="bloom-text">Wat Wil Ik</span></button>
+					</div>
+					<div>
+						<!-- Tab content -->
+						<div id="Wie-Ben-Ik" class="tabcontent" style="display: block;">
+							<div class="neu-border">
+								<div class="neu-border">
+									<h3 style="color: black;">Wie Ben Ik?</h3>
+									<hr noshade></hr>
+									<p style="line-height: 1.2; color: black;">
+										Ik ben Joost<br>
+										ik ben 15 jaar en word komende november 16<br>
+										Ik kom uit <a href="https://www.google.nl/maps/place/Amsterdam" target=”_blank”>Amsterdam</a> en daar woon ik ook <br>
+										Ik zat op de Dongeschool in de Rivierenbuurt<br>
+										Mijn tandenborstel is <mark style="color: white;">wit</mark> met <mark style="color: green;">groen</mark><br>
+										Mijn lievelingskleur is <mark style="color: red;">rood</mark>
+									</p>
+								</div>
 
-                            <div  class="neu-border">
-                                <button type="button" class="collapsible">Sport</button>
-                                <div class="content">
-                                    <h3>Sport</h3>
-                                    <hr noshade></hr>
-                                    <p style="line-height: 1.2;">
-                                        In de zomer zeil ik, ik kan "goed" zeilen in een Fusion en in een catamaran<br>
-                                        en in de winter schaats ik 3x per week<br>
-                                        Ik geef op zaterdagochtend schaatsles aan kinderen 
-                                    </p>
-                                    <img src="wie_ben_ik/Sport/catamaran.png" alt="catamaran" style="display: inline-block; width: 400px;" >
-                                    <img src="wie_ben_ik/Sport/fusion.jpg" alt="fusion" style="display: inline-block; width: 400px;" >
-                                </div>
-                            </div>
+								<div  class="neu-border">
+									<button type="button" class="collapsible">Familie</button>
+									<div class="content">
+										<!-- <h3 style="color: black;">Familie</h3> -->
+										<hr noshade></hr>
+											<p  style="line-height: 1.2; color: black;">
+											Ik woon samen met mijn vader moeder zusje en twee katten <mark style="color: orangered">Daan</mark> en <mark style="color: gray;">Pip</mark>
+										</p>
+										<img src="wie_ben_ik/Familie/daan.jpg" alt="Daan" style="display: inline-block; width: 40%;" >
+										<img src="wie_ben_ik/Familie/pip.jpg" alt="Pip" style="display: inline-block; width: 40%;">
+									</div>
+								</div>
+								<div  class="neu-border">
+									<button type="button" class="collapsible">Vrije Tijd</button>
+									<div class="content">
+										<h3 style="color: black;">Vrije Tijd</h3>
+										<hr noshade></hr>
+										<p style="line-height: 1.2; color: black;">
+											Afgelopen vakantie ben ik naar Friesland gevaren op de zeilboot van mij en mijn familie.<br>
+											En ik heb een week gezeild in vinkeveen in een wat kleiner bootje.<br>
+											Ik heb natuurlijk ook veel series gekeken en gezwommen<br>
+											<br>
+											Na school of in het weekend stel ik huiswerk eigenlijk zo ver mogelijk uit :)<br>
+											En dan ga ik series kijken, code of minecraft. <br>
+											Een van de laatste series die ik uit heb gekeken was Breaking Bad<br>
+											<br>
+											Ik speel natuurlijk ook spellen, zoals Minecraft en Valorant
+										</p>
+										<img src="wie_ben_ik/Vrije_Tijd/boot.jpg" alt="Onze Boot" style="display: inline-block; width: 40%; height: 200px;" >
+										<img src="wie_ben_ik/Vrije_Tijd/braking_bad.jpg" alt="Breaking Bad" style="display: inline-block; width: 400px;" >
+			
+									</div>
+								</div>
 
-                            <div  class="neu-border">
-                                <button type="button" class="collapsible">School</button>
-                                <div class="content">
-                                    <h3>School</h3>
-                                    <hr noshade></hr>
-                                    <p style="line-height: 1.2;">
-                                        Ik zit op Het Amsterdams Lyceum<br>
-                                        Ik doe Latijn met een n&t, N&g pakket<br>
-                                        Ik vind logischere vakken zoals nat en wis leuker/makkelijker, omdat dat logischers is<br>
-                                        <br>
-                                        Ook zit ik in de aula commissie en doe soms licht of geluid voor voorstellingen<br>
-                                    </p>
-                                    <img src="wie_ben_ik/School/het_amsterdams_lyceum.jpg" alt="School" style="display: inline-block; width: 400px;">
-                                </div>
-                            </div>
-                        </div>
+								<div  class="neu-border">
+									<button type="button" class="collapsible">Sport</button>
+									<div class="content">
+										<h3 style="color: black;">Sport</h3>
+										<hr noshade></hr>
+										<p style="line-height: 1.2; color: black;">
+											In de zomer zeil ik, ik kan "goed" zeilen in een Fusion en in een catamaran<br>
+											en in de winter schaats ik 3x per week<br>
+											Ik geef op zaterdagochtend schaatsles aan kinderen 
+										</p>
+										<img src="wie_ben_ik/Sport/catamaran.png" alt="catamaran" style="display: inline-block; width: 400px;" >
+										<img src="wie_ben_ik/Sport/fusion.jpg" alt="fusion" style="display: inline-block; width: 400px;" >
+									</div>
+								</div>
 
-                    </div>
-                
-                    <div id="Wat-Kan-Ik" class="tabcontent">
-                        <div class="neu-border">
-                            <h3>Wat Kan Ik?</h3>
-                            <hr noshade></hr>
-                            <div class="neu-border">
+								<div  class="neu-border">
+									<button type="button" class="collapsible">School</button>
+									<div class="content">
+										<h3 style="color: black;">School</h3>
+										<hr noshade></hr>
+										<p style="line-height: 1.2; color: black;">
+											Ik zit op Het Amsterdams Lyceum<br>
+											Ik doe Latijn met een n&t, N&g pakket<br>
+											Ik vind logischere vakken zoals nat en wis leuker/makkelijker, omdat dat logischers is<br>
+											<br>
+											Ook zit ik in de aula commissie en doe soms licht of geluid voor voorstellingen<br>
+										</p>
+										<img src="wie_ben_ik/School/het_amsterdams_lyceum.jpg" alt="School" style="display: inline-block; width: 400px;">
+									</div>
+								</div>
+							</div>
 
-                            <button type="button" class="collapsible">Sport</button>
-                            <div class="content">
-                                <h3>Sport</h3>
-                                <hr noshade></hr>
-                                <p style="line-height: 1.2;">
-                                    Ik kan dus een beetje zeilen en schaatsen<br>
-                                    Ik schaats al sinds ik 2 jaar oud ben<br>
-                                    Mijn club is de Poelster en die ligt in Amstelveen<br>
-                                    Ik vind short track leuker dan langebaan, omdat de krachten op je groter lijken, en dat is leuk<br>
-                                    <br>
-                                    Ik zeil al sinds mijn 6e bij <a href="https://www.zeilschoolvinkeveen.nl/index.php" target=”_blank”>Zeilschool De Vinkeveense Plassen</a><br>
-                                    De catamaran vind ik de leukste boot, omdat hij best lastig is, maar als je het kan haal je iedereen in.
-                                </p>
-                                <img src="wat_kan_ik/Sport/catamaran.png" alt="catamaran" style="display: inline-block; width: 400px;" >
-                                <img src="wat_kan_ik/Sport/fusion.jpg" alt="fusion" style="display: inline-block; width: 400px;" >
-                            </div>
-                        </div>
+						</div>
+					
+						<div id="Wat-Kan-Ik" class="tabcontent">
+							<div class="neu-border">
+								<h3 style="color: black;">Wat Kan Ik?</h3>
+								<hr noshade></hr>
+								<div class="neu-border">
 
-                        <div class="neu-border">
+								<button type="button" class="collapsible">Sport</button>
+								<div class="content">
+									<h3 style="color: black;">Sport</h3>
+									<hr noshade></hr>
+									<p style="line-height: 1.2; color: black;">
+										Ik kan dus een beetje zeilen en schaatsen<br>
+										Ik schaats al sinds ik 2 jaar oud ben<br>
+										Mijn club is de Poelster en die ligt in Amstelveen<br>
+										Ik vind short track leuker dan langebaan, omdat de krachten op je groter lijken, en dat is leuk<br>
+										<br>
+										Ik zeil al sinds mijn 6e bij <a href="https://www.zeilschoolvinkeveen.nl/index.php" target=”_blank”>Zeilschool De Vinkeveense Plassen</a><br>
+										De catamaran vind ik de leukste boot, omdat hij best lastig is, maar als je het kan haal je iedereen in.
+									</p>
+									<img src="wat_kan_ik/Sport/catamaran.png" alt="catamaran" style="display: inline-block; width: 400px;" >
+									<img src="wat_kan_ik/Sport/fusion.jpg" alt="fusion" style="display: inline-block; width: 400px;" >
+								</div>
+							</div>
 
-                            <button type="button" class="collapsible">School</button>
-                            <div class="content">
-                                <h3>School</h3>
-                                <hr noshade></hr>
-                                <p style="line-height: 1.2;">
-                                    Op school doe ik een natuur profiel<br>
-                                    Biologie, Scheikunde, Natuurkunde & Wis B<br>
-                                    Ik vind Bio het minst leuk van deze vakken, omdat de antwoorden soms een beetje subjectief zijn.<br>
-                                    Scheikunde is prima zolang je het bijhoud.<br>
-                                    Ik ben goed in Natuurkunde vorig jaar eindigde ik met een 94 :) .<br>
-                                    Ik vind wiskunde redelijk makkelijk, omdat als ik iets minder goed snap, ik een programmaatje in python schrijf die het snel oplost.<br>
-                                    En dan begrijp ik het.
-                                </p>
-                                <img src="wat_kan_ik/School/aula.jpg" alt="aula" style="display: inline-block; width: 400px;" >
-                                <img src="wat_kan_ik/School/gangen.jpg" alt="gangen" style="display: inline-block; width: 400px;" >
-                            </div>
-                        </div>
+							<div class="neu-border">
 
-                        <div class="neu-border">
-                            <button type="button" class="collapsible">Codeer Ervaring</button>
-                            <div class="content">
-                                <h3>Codeer Ervaring</h3>
-                                <hr noshade></hr>
-                                <p style="line-height: 1.2;">
-                                    Ik programeer vooral in python, omdat dat makkelijker is om te begrijpen, maar ik vind het minder mooi om met dicts te werken.<br>
-                                    Ik heb verschillende projecten in python, van api request parsen om rijk te worden in een spel<br>
-                                    Tot een physics engine die het zonnestelsel berekend (of als er 2 zonnen zouden zijn) met pygame<br>
-                                    Of een simulation framework om makkelijk data te simuleren met pygame.<br>
-                                    <br>
-                                    Mijn git is <a href="https://github.com/Merc4tor?tab=repositories" target="_blank">Mijn Github<a><br>
-                                    <br>
-                                    Ik doe soms samen met <a href="" target="_blank">Jonathan<a> code projectjes<br>
-                                    <br>
-                                    <i>Sinds kort maak ik ook als werk sites in Vue voor een oud-docent met html, css en javascript.</i>
-                                </p>
-                                <img src="wat_kan_ik/Code/api.png" alt="an api requester"  style="display: inline-block; width: 400px;">
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+								<button type="button" class="collapsible">School</button>
+								<div class="content">
+									<h3 style="color: black;">School</h3>
+									<hr noshade></hr>
+									<p style="line-height: 1.2; color: black;">
+										Op school doe ik een natuur profiel<br>
+										Biologie, Scheikunde, Natuurkunde & Wis B<br>
+										Ik vind Bio het minst leuk van deze vakken, omdat de antwoorden soms een beetje subjectief zijn.<br>
+										Scheikunde is prima zolang je het bijhoud.<br>
+										Ik ben goed in Natuurkunde vorig jaar eindigde ik met een 94 :) .<br>
+										Ik vind wiskunde redelijk makkelijk, omdat als ik iets minder goed snap, ik een programmaatje in python schrijf die het snel oplost.<br>
+										En dan begrijp ik het.
+									</p>
+									<img src="wat_kan_ik/School/aula.jpg" alt="aula" style="display: inline-block; width: 400px;" >
+									<img src="wat_kan_ik/School/gangen.jpg" alt="gangen" style="display: inline-block; width: 400px;" >
+								</div>
+							</div>
+
+							<div class="neu-border">
+								<button type="button" class="collapsible">Codeer Ervaring</button>
+								<div class="content">
+									<h3 style="color: black;">Codeer Ervaring</h3>
+									<hr noshade></hr>
+									<p style="line-height: 1.2; color: black;">
+										Ik programeer vooral in python, omdat dat makkelijker is om te begrijpen, maar ik vind het minder mooi om met dicts te werken.<br>
+										Ik heb verschillende projecten in python, van api request parsen om rijk te worden in een spel<br>
+										Tot een physics engine die het zonnestelsel berekend (of als er 2 zonnen zouden zijn) met pygame<br>
+										Of een simulation framework om makkelijk data te simuleren met pygame.<br>
+										<br>
+										Mijn git is <a href="https://github.com/Merc4tor?tab=repositories" target="_blank">Mijn Github<a><br>
+										<br>
+										Ik doe soms samen met <a href="" target="_blank">Jonathan<a> code projectjes<br>
+										<br>
+										<i>Sinds kort maak ik ook als werk sites in Vue voor een oud-docent met html, css en javascript.</i>
+									</p>
+									<img src="wat_kan_ik/Code/api.png" alt="an api requester"  style="display: inline-block; width: 400px;">
+								</div>
+							</div>
+							</div>
+						</div>
 
 
-                    <div id="Wat-Wil-Ik" class="tabcontent">
-                        <div class="neu-border">
-                            <button type="button" class="collapsible">Nu</button>
-                            <div class="content">
-                                <h3>Nu Mee Bezig</h3>
-                                <hr noshade></hr>
-                                <p style="line-height: 1.2;">
-                                    Ik ben nu bezig met kijken wat voor soort projecten ik leuk vind. <br>
-                                    Kijken naar verschillende programma's en talen, zoals: <br>
-                                    scratch, blender, davinci resolve, minecraft datapacks, python simulators, pythons api consumers & Vue sites servers.<br>
-                                    Ik vind de python dingen tot nu toe het leukst, omdat er met relatief weinig code heel veel werkt.<br>
-                                    <br>
-                                    Ik codeer nu voornamelijk in Vscode, omdat die extensions heel fijn en snel zijn.<br>
-                                </p>
-                                <img src="wat_wil_ik/Nu/vscode.png" alt="Vscode"  style="display: inline-block; width: 400px;">
-                            </div>
-                        </div>
+						<div id="Wat-Wil-Ik" class="tabcontent">
+							<div class="neu-border">
+								<button type="button" class="collapsible">Nu</button>
+								<div class="content">
+									<h3 style="color: black;">Nu Mee Bezig</h3>
+									<hr noshade></hr>
+									<p style="line-height: 1.2; color: black;">
+										Ik ben nu bezig met kijken wat voor soort projecten ik leuk vind. <br>
+										Kijken naar verschillende programma's en talen, zoals: <br>
+										scratch, blender, davinci resolve, minecraft datapacks, python simulators, pythons api consumers & Vue sites servers.<br>
+										Ik vind de python dingen tot nu toe het leukst, omdat er met relatief weinig code heel veel werkt.<br>
+										<br>
+										Ik codeer nu voornamelijk in Vscode, omdat die extensions heel fijn en snel zijn.<br>
+									</p>
+									<img src="wat_wil_ik/Nu/vscode.png" alt="Vscode"  style="display: inline-block; width: 400px;">
+								</div>
+							</div>
 
-                        <div class="neu-border">
-                            <button type="button" class="collapsible">Soort Werk</button>
-                            <div class="content">
-                                <h3>Soort Werk</h3>
-                                <hr noshade></hr>
-                                <p style="line-height: 1.2;">
-                                    Ik wil denk ik iets technisch doen<br>
-                                    Op Youtube kijk ik vaak wiskunde of natuurkunde filmpjes<br>
-                                    <br>
-                                    Ik vind dynamische neural networks interessant, omdat ze zo op echt leven lijken<br>
-                                    Neural Networks vind ik soiezo heel leuk, omdat ze dingen "bedenken" in de hidden layers die niemand begrijpt<br>
-                                    Er was laatst een neural netwerk getraind op echte dingen die vallen en botsen, en het netwerk moest voorspellen wat er daarna ging gebeuren<br>
-                                    Het lukte, alleen toen de onderzoekers keken naar hoe het netwerk op het antwoord kwam, zagen ze dat het netwerk compleet onbekende constanten had gevonden, die dus wel werken<br>
-                                    <br>
-                                    Maar een keer een product ontwerpen lijkt mij ook leuk.
-                                </p>
-                                <img src="wat_wil_ik/Werk/neural_network.png" alt="Neural Network"  style="display: inline-block; width: 400px;">
-                            </div>
-                        </div>
+							<div class="neu-border">
+								<button type="button" class="collapsible">Soort Werk</button>
+								<div class="content">
+									<h3 style="color: black;">Soort Werk</h3>
+									<hr noshade></hr>
+									<p style="line-height: 1.2; color: black;">
+										Ik wil denk ik iets technisch doen<br>
+										Op Youtube kijk ik vaak wiskunde of natuurkunde filmpjes<br>
+										<br>
+										Ik vind dynamische neural networks interessant, omdat ze zo op echt leven lijken<br>
+										Neural Networks vind ik soiezo heel leuk, omdat ze dingen "bedenken" in de hidden layers die niemand begrijpt<br>
+										Er was laatst een neural netwerk getraind op echte dingen die vallen en botsen, en het netwerk moest voorspellen wat er daarna ging gebeuren<br>
+										Het lukte, alleen toen de onderzoekers keken naar hoe het netwerk op het antwoord kwam, zagen ze dat het netwerk compleet onbekende constanten had gevonden, die dus wel werken<br>
+										<br>
+										Maar een keer een product ontwerpen lijkt mij ook leuk.
+									</p>
+									<img src="wat_wil_ik/Werk/neural_network.png" alt="Neural Network"  style="display: inline-block; width: 400px;">
+								</div>
+							</div>
 
-                        <div class="neu-border">
-                            <button type="button" class="collapsible">Verder</button>
-                            <div class="content">
-                                <h3>Verder</h3>
-                                <hr noshade></hr>
-                                <p style="line-height: 1.2;">
-                                    Eigenlijk heb ik nog niet echt een idee wat ik wil gaan doen<br>
-                                    Ik ga gewoon een beetje mee met wat er op mijn pad komt.<br>
-                                    <br>
-                                    Maar mij lijkt Data Science, Technische Universiteit Eindhoven of iets met natuurkunde wel leuk om te studeren<br>
+							<div class="neu-border">
+								<button type="button" class="collapsible">Verder</button>
+								<div class="content">
+									<h3 style="color: black;">Verder</h3>
+									<hr noshade></hr>
+									<p style="line-height: 1.2; color: black;">
+										Eigenlijk heb ik nog niet echt een idee wat ik wil gaan doen<br>
+										Ik ga gewoon een beetje mee met wat er op mijn pad komt.<br>
+										<br>
+										Maar mij lijkt Data Science, Technische Universiteit Eindhoven of iets met natuurkunde wel leuk om te studeren<br>
 
-                                </p>
-                                <img src="wat_wil_ik/Verder/uva.jpg" alt="uva"  style="display: inline-block; width: 400px;">
-                            </div>
-                        </div>  
-                    </div>
-
+									</p>
+									<img src="wat_wil_ik/Verder/uva.jpg" alt="uva"  style="display: inline-block; width: 400px;">
+								</div>
+							</div>  
+						</div>
+				</div>
         </body>
-    </div>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
@@ -284,24 +289,101 @@
             }
         });
         }
+		
+		
+		var canvas = document.getElementById( 'canvas' ),
+		ctx = canvas.getContext( '2d' ),
+    canvas2 = document.getElementById( 'canvas2' ),
+    ctx2 = canvas2.getContext( '2d' ),
+		// full screen dimensions
+		cw = window.innerWidth,
+		ch = window.innerHeight,
+    charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'],
+    maxCharCount = 100,
+    fallingCharArr = [],
+    fontSize = 10,
+    maxColums = cw/(fontSize);
+    canvas.width = canvas2.width = cw;
+    canvas.height = canvas2.height = ch;
 
+
+    function randomInt( min, max ) {
+    	return Math.floor(Math.random() * ( max - min ) + min);
+    }
+
+    function randomFloat( min, max ) {
+    	return Math.random() * ( max - min ) + min;
+    }
+
+    function Point(x,y)
+    {
+      this.x = x;
+      this.y = y;
+    }
+
+    Point.prototype.draw = function(ctx){
+
+      this.value = charArr[randomInt(0,charArr.length-1)].toUpperCase();
+      this.speed = randomFloat(1,5);
+
+
+      ctx2.fillStyle = "rgba(255,255,255,0.8)";
+      ctx2.font = fontSize+"px san-serif";
+      ctx2.fillText(this.value,this.x,this.y);
+
+        ctx.fillStyle = "#0F0";
+        ctx.font = fontSize+"px san-serif";
+        ctx.fillText(this.value,this.x,this.y);
+
+
+
+        this.y += this.speed;
+        if(this.y > ch)
+        {
+          this.y = randomFloat(-100,0);
+          this.speed = randomFloat(2,5);
+        }
+    }
+
+    for(var i = 0; i < maxColums ; i++) {
+      fallingCharArr.push(new Point(i*fontSize,randomFloat(-500,0)));
+    }
+
+
+    var update = function()
+    {
+
+    ctx.fillStyle = "rgba(0,0,0,0.05)";
+    ctx.fillRect(0,0,cw,ch);
+
+    ctx2.clearRect(0,0,cw,ch);
+
+      var i = fallingCharArr.length;
+
+      while (i--) {
+        fallingCharArr[i].draw(ctx);
+        var v = fallingCharArr[i];
+      }
+
+      requestAnimationFrame(update);
+    }
+
+  update();
     </script>
 </html>
 
 <style>
 .container {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+/*
 
     border-style: solid;
     border-width: 3px;
     border-radius: 3px;
 
-    font-family: sans-serif;
 
     overflow-y: scroll;
+	*/
+    font-family: sans-serif;
 }
 
 mark {
@@ -433,6 +515,15 @@ mark {
         10px 10px 10px rgba(0,0,0, 0.45),
         inset -10px -10px 10px rgba(0, 0, 0, 0.45),
         inset 10px 10px 10px rgba(255, 255, 255, 1);
+}
+span {
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 100);
+  animation: anim 1s linear infinite alternate;
+}
+
+@keyframes anim {
+  from {text-shadow: 0px 0px 20px rgba(0, 0, 0, 100);}
+  to {text-shadow: 0px 0px 5px rgba(0, 0, 0, 100);}
 }
 </style>
 
